@@ -29,6 +29,8 @@ manifest:
       url-base: https://github.com/ThrowTheSwitch
     - name: armmbed
       url-base: https://github.com/ARMmbed
+    - name: schirrmacher
+      url-base: https://github.com/schirrmacher
 
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
@@ -38,7 +40,6 @@ manifest:
   # "projects" is a list of git repositories which make up the NCS
   # source code.
   projects:
-
     # The Zephyr RTOS fork in the NCS, along with the subset of its
     # modules which NCS imports directly.
     #
@@ -90,6 +91,7 @@ manifest:
       repo-path: sdk-mcuboot
       revision: v1.6.0-rc2-ncs1
       path: bootloader/mcuboot
+      remote: schirrmacher
     - name: mcumgr
       repo-path: sdk-mcumgr
       revision: v0.0.1-ncs2
